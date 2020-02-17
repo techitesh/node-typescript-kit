@@ -28,10 +28,7 @@ class Server {
     }
 
     /** Express Routes */
-    initRoutes() {
-
-        
-        this.router.get('/', (req, res, next) => res.status(200).json({ success: true }))
+    initRoutes() {this.router.get('/', (req, res, next) => res.status(200).json({ success: true }))
     }
 
     /** Creates an HTTP Server for Express App */
