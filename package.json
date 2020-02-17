@@ -6,7 +6,8 @@
   "scripts": {
     "tslint": "tslint --project .  --config ./tslint.json",
     "tslint:fix": "tslint --project . --fix --config ./tslint.json",
-    "start": "nodemon"
+    "start": "ts-node server.ts",
+    "dev": "nodemon"
   },
   "_moduleAliases": {
     "@root": "src/",
@@ -26,7 +27,6 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2",
-    "nodemon": "^2.0.2",
     "passport": "^0.4.1",
     "yargs": "^15.1.0"
   },
