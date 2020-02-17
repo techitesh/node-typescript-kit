@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "noImplicitAny": false,
+        "rootDir": "./src",
+        "outDir": "./build",
+        "sourceMap": false,
+        "baseUrl": "./src",
+        "paths": {
+            "@root/*": ["*"],
+            "@config/*": ["config/*"],
+            "@helpers/*": ["helpers/*"],
+            "@controllers/*": ["controllers/*"],
+            "@models/*" : ["models/*"],
+            "@routes/*": ["routes/*"],
+            "@views/*": ["views/*"]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
