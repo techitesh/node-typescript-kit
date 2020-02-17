@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tslint": "tslint --project /home/hitesh/demo/node-starter-kit  --config ./tslint.json",
-    "tslint:fix": "tslint --project /home/hitesh/demo/node-starter-kit --fix --config ./tslint.json",
+    "tslint": "tslint --project .  --config ./tslint.json",
+    "tslint:fix": "tslint --project . --fix --config ./tslint.json",
     "start": "nodemon"
   },
   "_moduleAliases": {
