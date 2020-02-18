@@ -5,6 +5,7 @@ import * as express from 'express';
 import 'module-alias/register';
 import * as morgan from 'morgan';
 import { argv as args } from 'yargs';
+import * as mongoose from 'mongoose'
 
 class Server {
     public app: express.Application = express()
@@ -15,7 +16,8 @@ class Server {
         dotenv.config({ path: envFile })
         this.initMiddlewares();
         this.initRoutes();
-        this.listen()
+        this.initDatabase();
+        this.listen();
     }
 
     /** Express Middlewares */
@@ -28,7 +30,16 @@ class Server {
     }
 
     /** Express Routes */
-    initRoutes() {this.router.get('/', (req, res, next) => res.status(200).json({ success: true }))
+    initRoutes() {
+        this.router.get('/', (req, res, next) => res.status(200).json({ success: true }))
+    }
+
+    /** This Initialize mongoDB connection */
+    initDatabase() {
+        /* tslint:disable */
+        mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true })
+        .then(() => console.log(`Connected to MongoDB`))
+        .catch(error => console.log(error.message))
     }
 
     /** Creates an HTTP Server for Express App */
