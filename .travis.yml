@@ -12,9 +12,11 @@ cache:
 before_script:
   - npm install
 
-script: 
-  - npm run start
-  - npm run tslint
+jobs:
+  include:
+    - stage: lint
+      name: "Linting Test"
+      script: npm run tslint 
 
 branches: 
   only:
