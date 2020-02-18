@@ -13,9 +13,9 @@ before_script:
   - npm install
 
 script: 
-  - npm run tslint
   - npm run start
-  
+  - npm run tslint
+
 branches: 
   only:
     - master
