@@ -13,6 +13,7 @@ before_script:
 
 script: 
   - npm run tslint
+  - npm run start
   
 branches: 
   only:

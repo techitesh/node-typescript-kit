@@ -1,7 +1,7 @@
 
 This is an express app built with Typescript with extremely easy to setup and run 
 
-[![Build Status](https://travis-ci.org/techitesh/node-typescript-starter-kit.svg?branch=master)](https://travis-ci.org/techitesh/node-typescript-starter-kit)
+[![Build Status](https://travis-ci.com/techitesh/node-typescript-kit.svg?branch=master)](https://travis-ci.com/techitesh/node-typescript-kit)
 
 **Prerequisites**
     
