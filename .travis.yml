@@ -23,6 +23,7 @@ jobs:
     - stage: deploy
       name: "Deploy to Production"
       script: 
+        - npm run ts:compile
         - bash ./deploy.sh
 
 branches: 
