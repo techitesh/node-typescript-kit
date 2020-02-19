@@ -17,6 +17,9 @@ jobs:
     - stage: lint
       name: "Linting Test"
       script: npm run tslint 
+    - stage: compile
+      name: "Compile Typescript to Javascript"
+      script: npm run ts:compile
     - stage: deploy
       name: "Deploy to Production"
       script: 
