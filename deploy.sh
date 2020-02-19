@@ -1,2 +1,2 @@
 #!/bin/sh
-echo Hello World
+zip -r dist.zip dist/
