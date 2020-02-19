@@ -17,6 +17,9 @@ jobs:
     - stage: lint
       name: "Linting Test"
       script: npm run tslint 
+    - stage: deploy
+      name: "Deploy to Production"
+      script: ./deploy.sh
 
 branches: 
   only:
