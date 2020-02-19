@@ -19,7 +19,8 @@ jobs:
       script: npm run tslint 
     - stage: deploy
       name: "Deploy to Production"
-      script: ./deploy.sh
+      script: 
+        - bash ./deploy.sh
 
 branches: 
   only:
